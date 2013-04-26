@@ -1,0 +1,7 @@
+-cp src
+-main Main
+-swf bin/LD26.swf
+-swf-header 800:600:40:CECECE
+
+#--next
+#-cmd open /Applications/Flash\ Player\ Debugger.app bin/LD26.swf
