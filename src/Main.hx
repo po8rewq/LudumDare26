@@ -56,7 +56,7 @@ class Main extends Sprite
     {
         removeEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
 
-        indexTxt = new Text("         Destroy the boats before it kills "+_maxFishes+" fishes\n\n Throw potatos on the boats, but do not kill the fish \n\n               PRESS \"SPACE\" TO START", 25);
+        indexTxt = new Text("         Destroy the boats before they kill "+_maxFishes+" fish\n\n Throw potatoes on the boats, but do not kill the fish! \n\n               PRESS \"SPACE\" TO START", 25);
         indexTxt.x = (stage.stageWidth - indexTxt.width) / 2;
         indexTxt.y = (stage.stageHeight - indexTxt.height) / 2;
         addChild( indexTxt );
@@ -270,6 +270,9 @@ class Main extends Sprite
             removeEventListener(Event.ENTER_FRAME, onMainLoop);
 
             _endText = new Text("GAME OVER \n\n Your score: "+_score);
+            _endText.x = (stage.stageWidth - _endText.width) / 2;
+            _endText.x = (stage.stageHeight - _endText.height) / 2;
+            addChild(_endText);
         }
     }
     private var _endText : Text;
